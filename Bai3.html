@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<script>
+    let str = prompt("mời bạn nhập vào một chuỗi");
+    let result = [];
+    for (let i = 0 ; i < str.length ; i++) {
+        if (str[i] == str[i].toUpperCase()) {
+            let tg = str[i].toLowerCase();
+            result.push(tg);
+        } else {
+            let tg = str[i].toUpperCase() ;
+            result.push(tg);
+        }
+    }
+    alert(result.join(''));
+
+</script>
+</body>
+</html>

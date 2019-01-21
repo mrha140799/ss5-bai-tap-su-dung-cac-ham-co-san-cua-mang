@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<script>
+    let numb = parseInt(prompt("Mời bạn nhập vào dãy số"));
+    let str = numb.toString();
+    let res = [str[0]];
+    for (let i = 1 ; i < str.length ; i++) {
+        if (str[i] % 2 ==0) {
+            res.push( str[i] ,"-" );
+        }else {
+            res.push(str[i]);
+        }
+    }
+    alert(res.join(''));
+</script>
+</body>
+</html>
